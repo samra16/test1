@@ -24,4 +24,4 @@ jobs:
           git config --local user.name "samra16"
           git add sample-file.txt
           git commit -m "Add sample-file.txt"
-          git push
+          git push origin main
