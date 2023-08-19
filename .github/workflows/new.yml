@@ -1,5 +1,5 @@
 name: Display a File
-'on':
+on:
   push:
     branches:
       - main
