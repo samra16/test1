@@ -22,6 +22,6 @@ jobs:
           echo "This is a sample file created by the CI/CD pipeline" > sample1-file.txt
           git config --local user.email "samra.km16@gmail.com"
           git config --local user.name "samra16"
-          git add sample1-file.txt
+          git add .
           git commit -m "Add sample1-file.txt"
           git push origin main
