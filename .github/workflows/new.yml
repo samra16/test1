@@ -15,7 +15,7 @@ jobs:
       id-token: 'write'
     steps:
       - uses: actions/checkout@v3
-      
+
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, samra!
@@ -28,3 +28,10 @@ jobs:
           cat second2.sh
           echo "bye New"
 
+      - name: Execute file content
+        working-directory: .
+        shell: sh
+        run: |
+          echo "Start Execution"
+          sh second2.sh
+          echo "End Execution"
