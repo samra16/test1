@@ -18,7 +18,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build docker image
-        run: docker build -t Dockerfile
+        run: docker build . -t Dockerfile
 
 
       - name: Run Docker container
